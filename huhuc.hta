@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huhu's game hub</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f1015; color: #e0e6ed; }
+        
+        /* Navigation */
+        navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; background: #161822; border-bottom: 1px solid #282c3f; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #00f2fe; letter-spacing: 2px; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: #a0aec0; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: #00f2fe; }
+
+        /* Hero Banner */
+        .hero { background: linear-gradient(180deg, rgba(15,16,21,0.4) 0%, rgba(15,16,21,1) 100%), #1f2333; padding: 4rem 5%; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #fff; }
+        .hero p { color: #8e9baf; max-width: 600px; margin: 0 auto 1.5rem auto; }
+        .btn { background: linear-gradient(45deg, #4facfe, #00f2fe); color: #000; padding: 0.8rem 2rem; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; }
+
+        /* Main Grid */
+        .container { padding: 3rem 5%; }
+        .section-title { font-size: 1.5rem; margin-bottom: 1.5rem; color: #fff; border-left: 4px solid #00f2fe; padding-left: 0.8rem; }
+        .game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        
+        /* Game Cards */
+        .card { background: #161822; border-radius: 8px; overflow: hidden; border: 1px solid #232738; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: #00f2fe; }
+        .card-img { width: 100%; height: 160px; background: #282c3f; display: flex; align-items: center; justify-content: center; color: #5a6578; font-weight: bold; }
+        .card-body { padding: 1.2rem; }
+        .card-title { font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem; }
+        .card-meta { display: flex; justify-content: space-between; color: #718096; font-size: 0.85rem; margin-top: 1rem; }
+        .status-online { color: #48bb78; }
+    </style>
+</head>
+<body>
+
+    <navbar>
+        <div class="logo">Hu Hu's game hub</div>
+        <ul class="nav-links">
+            <li><a href="URL">download</a></li>
+            <li><a href="https://www.crazygames.com/">More games from crazy game</a></li>
+            <li><a href="https://gdbrowser.com/leaderboard">Leaderboards of gd</a></li>
+            <li><a href="https://app.pumble.com/workspace/6a9bf677c1a5912fa329a89f/6a9bf677c1a5912fa329a8a5">Community server</a></li>
+            <li><a href="https://www.youtube.com/@BhonePyaeKo-y8v9h">subscribe from youtube</a></li>
+        </ul>
+    </navbar>
+
+    <section class="hero">
+        <h1>Wecome to our web.</h1>
+        <p>Play,and chat with HuHu.</p>
+        <button class="btn">Chat or play with hu hu...</button>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Hu Hu can play...</h2>
+        <div class="game-grid">
+            <div class="card">
+                <a target="_blank" href="https://web.cloudmoonapp.com/game/com.roblox.client/">
+                <div class="card-img">roblox</div>
+                </a>
+                <div class="card-body">
+                    <div class="card-title">Roblox</div>
+                    <p style="color: #a0aec0; font-size: 0.9rem;">3D jumping platform game</p>
+                    <div class="card-meta">
+                        <span>Platforming and more...</span>
+                        <span class="status-online">● 1,240 Online</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://geometrylitepc.net/">
+                <div class="card-img">geometry dash</div>
+                </a>
+                <div class="card-body">
+                    <div class="card-title">geometry dash</div>
+                    <p style="color: #a0aec0; font-size: 0.9rem;">dodge the spike and obsticles.</p>
+                    <div class="card-meta">
+                        <span>dodge</span>
+                        <span class="status-online">● 850 Online</span>
+                        <a target="_blank" href="https://www.youtube.com/@RobTopGames">
+                        <p1>youtube</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://spacewaves2.org/">
+                <div class="card-img">space wave</div>
+                </a>
+                <div class="card-body">
+                    <div class="card-title">spase wave</div>
+                    <p style="color: #a0aec0; font-size: 0.9rem;">play with multiplayers.</p>
+                    <div class="card-meta">
+                        <span>dodge</span>
+                        <span class="status-online">● 1000 online</span>
+                        <a target="_blank" href="https://www.tiktok.com/en/">
+                        <p1>tiktok</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
